@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet bank</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <span>Card Number:</span>
+          <input type="text" name="number" required />
+        </div>
+        <div>
+          <span>Card Expiration:</span>
+          <input type="datetime-local" name="expiration" required />
+        </div>
+        <div>
+          <span>Card CVV:</span>
+          <input type="password" name="cvv" required />
+        </div>
+        <button type="submit">Add Card</button>
+      </form>
+      <a href="./personalAccount.html" class="back">Back</a>
+      <div id="db"></div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

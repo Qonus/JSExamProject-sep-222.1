@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet bank</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <span>Account Title:</span>
+          <input type="text" name="title" required />
+        </div>
+        <div>
+          <span>User IIN:</span>
+          <input type="text" name="iin" required />
+        </div>
+        <div>
+          <span>Account IBAN:</span>
+          <input type="text" name="iban" required />
+        </div>
+        <div>
+          <span>Account BIC:</span>
+          <input type="text" name="bic" required />
+        </div>
+        <div>
+          <span>Account Currency:</span>
+          <input type="text" name="currency" required />
+        </div>
+        <div>
+          <span>Account Balance:</span>
+          <input type="text" name="balance" required />
+        </div>
+        <button type="submit">Add Account</button>
+      </form>
+      <a href="./editDB.html" class="back">Back</a>
+      <div id="db"></div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

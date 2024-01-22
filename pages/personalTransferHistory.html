@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet bank</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <span>Recipient's IBAN:</span>
+          <input type="text" name="iban" required />
+        </div>
+        <div>
+          <span>Transaction Amount:</span>
+          <input type="text" name="amount" required />
+        </div>
+        <button type="submit">Transfer</button>
+      </form>
+      <a href="./personalAccount.html" class="back">Back</a>
+      <div id="db"></div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
